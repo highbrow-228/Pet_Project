@@ -22,7 +22,7 @@ add eax, '0'
 ; F = (g + h) - (i + j)
 mov [F], eax
 
-; відкриваємо файл
+; Open file
 mov eax, 5
 mov ebx, file_name
 mov ecx, 0x201
@@ -31,33 +31,33 @@ int 0x80
 
 mov esi, eax
 
-; записуємо змінну F у файл
+; write the variable F to the file
 mov ebx, esi
 mov ecx, F
 mov edx, 4
 mov eax, 4
 int 0x80
 
-; закриваємо файл
+; close file
 mov eax, 6
 mov ebx, esi
 int 0x80
 
-; виводимо змінну F на консоль
+; output the variable F to the console
 mov eax, 4
 mov ebx, 1
 mov ecx, F
 mov edx, 4
 int 0x80
 
-; виводимо символ кінця рядка на консоль
+; output the end-of-line character to the console
 mov eax, 4
 mov ebx, 1
 mov ecx, nl
 mov edx, nl_len
 int 0x80
 
-; виходимо з програми
+; exit
 mov eax, 1
 xor ebx, ebx
 int 0x80

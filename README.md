@@ -12,7 +12,7 @@
 9. [This x86 assembly code](https://github.com/Sviatoslav1886/Pet_Project/blob/main/Work_with_stack.asm) for Linux implements the calculation of the average value (arithmetic mean) of the elements of two arrays of integers. First, it declares two arrays array1 and array2 with the specified number of elements in each. After that, the average value for each of these arrays is calculated using the calc_average subroutine, which uses the stack to store local variables. After calculating the average values, the results are written to the file “results.txt” using the Linux system calls open, write, and displayed on the screen. The final result demonstrates how to work with the stack, arithmetic operations, and the use of system calls to interact with the file system and display.
 10. [This code](https://github.com/Sviatoslav1886/Pet_Project/blob/main/tf_sentiment_model.ipynb) demonstrates the process of analyzing text tone with the BERT model using TensorFlow/Keras. First, the data is downloaded from Kaggle (train.tsv and test.tsv), after which it is processed and loaded into Pandas DataFrame objects. The text is transformed using the BERT tokenizer from the transformers library, and then converted to TensorFlow tensors (input_ids and attention_mask). The data is provided in Dataset format to train a BERT model with its own classification head. After the model is built, it is trained using the fit method, and after training, it is saved to disk for further use.
 11. [History Quiz]() My main goal is to use LangChain and Python to create a very simple class with a few methods for:
-* writing a historical question with a date as the correct answer
-* Getting the correct answer from the LLM
-* Get the best guess of the correct answer from a human user
-* Check/notify the difference between the correct answer and the user's answer
+  * writing a historical question with a date as the correct answer
+  * Getting the correct answer from the LLM
+  * Get the best guess of the correct answer from a human user
+  * Check/notify the difference between the correct answer and the user's answer
